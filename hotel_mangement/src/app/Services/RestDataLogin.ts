@@ -24,7 +24,7 @@ export class RestDataSource {
   }
   devUrl:String="http://localhost:"
   prodUrl:String="http://34.122.139.85:"
- envUrl:String=this.devUrl
+ envUrl:String=this.prodUrl
 
  getDetails(): Observable<Login[]> {
   return this.http.get<Login[]>(this.envUrl+"9012/hotel/branchlogin/getall");
